@@ -4,6 +4,11 @@ using ItemsTrabajo.Api.Services;
 
 namespace ItemsTrabajo.Api.Controllers;
 
+/// <summary>
+/// Microservicio de Gestion de Items de Trabajo administra el ciclo de vida
+/// de los items.
+/// </summary>
+
 [ApiController]
 [Route("api/items")]
 public class ItemsTrabajoController : ControllerBase
@@ -15,6 +20,10 @@ public class ItemsTrabajoController : ControllerBase
     [HttpGet]
     public ActionResult<IReadOnlyCollection<ItemTrabajoDto>> ObtenerTodos() =>
         Ok(_servicio.ObtenerTodos());
+
+    /// <summary>
+    /// Crea un nuevo item de trabajo en estado Pendiente y sin asignar.
+    /// </summary>
 
     [HttpPost]
     public ActionResult<ItemTrabajoDto> Crear(CrearItemDto dto)
@@ -29,6 +38,11 @@ public class ItemsTrabajoController : ControllerBase
         var resultado = await _servicio.DistribuirPendientesAsync();
         return Ok(resultado);
     }
+
+    /// <summary>
+    /// Marca un item como completado y notifica al microservicio de Usuarios
+    /// para que mueva el contador de pendientes a completados.
+    /// </summary>
 
     [HttpPut("{id}/completar")]
     public async Task<ActionResult<ItemTrabajoDto>> Completar(Guid id)

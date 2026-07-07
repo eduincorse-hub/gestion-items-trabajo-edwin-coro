@@ -3,15 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Usuarios.api", "Usuarios.api\Usuarios.api.csproj", "{AEF3C1A7-2907-46DF-9016-512E578CA136}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Usuarios.api", "Usuarios.api\Usuarios.api.csproj", "{AEF3C1A7-2907-46DF-9016-512E578CA136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsTrabajo.Api", "ItemsTrabajo.Api\ItemsTrabajo.Api.csproj", "{AF82E1A9-CF08-45FD-A684-066376477A9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemsTrabajo.Api", "ItemsTrabajo.Api\ItemsTrabajo.Api.csproj", "{AF82E1A9-CF08-45FD-A684-066376477A9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsTrabajo.Api.Tests", "ItemsTrabajo.Api.Tests\ItemsTrabajo.Api.Tests.csproj", "{9804559C-823D-4EB0-B1FF-31FF1CD582EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemsTrabajo.Api.Tests", "ItemsTrabajo.Api.Tests\ItemsTrabajo.Api.Tests.csproj", "{9804559C-823D-4EB0-B1FF-31FF1CD582EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{39D40077-6A93-4AC9-A532-8E5849ACFC62}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
