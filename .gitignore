@@ -1,0 +1,17 @@
+## .NET
+bin/
+obj/
+*.user
+.vs/
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vscode/
+*.swp
+
+## NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
